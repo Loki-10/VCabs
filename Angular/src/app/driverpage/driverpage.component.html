@@ -1,0 +1,102 @@
+   
+    <mat-toolbar class="lol">
+        <pre>
+
+        </pre>
+       <h1 class="greeny">VCabs</h1>
+       <span class="example-spacer"></span>
+     
+        <button mat-raised-button routerLink="/Home">
+          <mat-icon>exit_to_app</mat-icon>
+          <span> Logout</span>
+        </button>
+      
+      <pre>
+      </pre>
+     </mat-toolbar>
+
+     <pre>
+
+
+      
+    </pre>
+    <div class="container-fluid mt--6">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="card">
+              <div class="card-header border-0">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h3 class="mb-0">Ride Details</h3>
+                  </div>
+                  <div class="col text-right">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Source</th>
+                      <th scope="col">Destination</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Customer Name</th>
+                      <th scope="col">Customer Phone</th>
+                      <th scope="col">Payment</th>
+                      <th scope="col">Cancelled</th>
+                    </tr>
+                  </thead>
+                  <tbody *ngFor="let ride of rides">
+                    <tr *ngIf="ride.cancel=='No'">
+                      <td>
+                        {{ride.source}}
+                      </td>
+                      <td>
+                        {{ride.destination}}
+                      </td>
+                      <td>
+                        {{ride.date}}
+                      </td>
+                      <td>
+                        {{ride.time}}
+                      </td>
+                      <td>
+                        {{ride.userName}}
+                      </td>
+                      <td>
+                        {{ride.userPhone}}
+                      </td>
+                      <td>
+                        {{ride.payment}} [Rs. {{ride.amount}}]
+                      </td>
+                      <td>
+                        {{ride.cancel}}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<style>
+    .example-spacer {
+        flex: 1 1 auto;
+      } 
+
+    .greeny{
+        color:#14c871;
+    }
+    
+    button{
+        font-size :smaller;
+        background-color: #14c871;
+        color: whitesmoke;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+</style>

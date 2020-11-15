@@ -1,0 +1,74 @@
+<pre>
+
+
+
+</pre>
+<div class="container-fluid mt--6">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="card">
+          <div class="card-header border-0">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="mb-0">Ride Details</h3>
+              </div>
+              <div class="col text-right">
+                
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <!-- Projects table -->
+            <table class="table align-items-center table-flush">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Source</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Driver Name</th>
+                  <th scope="col">Driver Phone</th>
+                  <th scope="col">Cancelled</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let ride of rides">
+                <tr *ngIf="ride.cancel=='No'">
+                  <td>
+                    {{ride.source}}
+                  </td>
+                  <td>
+                    {{ride.destination}}
+                  </td>
+                  <td>
+                    {{ride.date}}
+                  </td>
+                  <td>
+                    {{ride.time}}
+                  </td>
+                  <td>
+                    {{ride.driverName}}
+                  </td>
+                  <td>
+                    {{ride.driverPhone}}
+                  </td>
+                  <td>
+                    <button tabindex="-1" (click)=updateRide(ride) mat-raised-button class="cancelbtn" ><i class="icofont-close"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .cancelbtn
+    {
+     color: white; 
+     width: 30px;
+     height:30px;
+     border-radius: 2px;
+     background-color:#dc2c4a;
+    }
+  </style>

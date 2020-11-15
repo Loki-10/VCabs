@@ -1,0 +1,145 @@
+<style>
+  #dru{
+    background-color:#14c871 ;
+    color: whitesmoke;
+  }
+  #dru:hover{
+    background-color: #3b49ee;
+    cursor: pointer;
+ }
+</style>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+ <div class="container d-flex align-items-center">
+
+  <h1 class="logo mr-auto"><a routerLink="/Home">VCabs</a></h1>
+   <!-- Uncomment below if you prefer to use an image logo -->
+   <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+   <nav class="nav-menu d-none d-lg-block">
+     <ul>
+      <li><a routerLink="/Home">Home</a></li>
+       <li><a routerLink="/About">About</a></li>
+       <li><a routerLink="/Services">Services</a></li>
+       <li class="active "><a routerLink="/Contact">Contact</a></li>
+     </ul>
+   </nav><!-- .nav-menu -->
+
+   <a id="dru" class="get-started-btn scrollto" (click)="openDialog()">Get Started</a>
+
+ </div>
+</header><!-- End Header -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
+          <p>Do you have any questions?   Please do not hesitate to contact us directly.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>No. 19, Kalam Street, Ramanathapuram, Tamil Nadu</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>contactus@vcabs.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9994431912</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" required>
+                  </mat-form-field>
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                <mat-form-field>
+                  <mat-label>Your Email</mat-label>
+                  <input matInput type="email" required>
+                </mat-form-field>
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <mat-form-field style="width: 100%;">
+                  <mat-label>Subject</mat-label>
+                  <input matInput type="text" required>
+                </mat-form-field>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <mat-form-field style="width: 100%">
+                  <mat-label>Leave a comment</mat-label>
+                  <textarea matInput rows="8" ></textarea>
+                </mat-form-field>
+                <div class="validate"></div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>VCabs</h3>
+            <p>Stay Connected with us.</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+          <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+          <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="icofont-google-plus"></i></a>
+          <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+          <a href="#" class="github"><i class="fab fa-github"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>VCabs</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+

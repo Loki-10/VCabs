@@ -1,0 +1,103 @@
+<style>
+
+  #dru{
+    background-color:#14c871 ;
+    color: whitesmoke;
+  }
+  #dru:hover{
+    background-color: #3b49ee;
+    cursor: pointer;
+  }
+  
+</style>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+ <div class="container d-flex align-items-center">
+
+  <h1 class="logo mr-auto"><a routerLink="/Home">VCabs</a></h1>
+   <!-- Uncomment below if you prefer to use an image logo -->
+   <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+   <nav class="nav-menu d-none d-lg-block">
+     <ul>
+       <li><a routerLink="/Home">Home</a></li>
+       <li><a routerLink="/About">About</a></li>
+       <li class="active "><a routerLink="/Services">Services</a></li>
+       <li><a routerLink="/Contact">Contact</a></li>
+     </ul>
+   </nav><!-- .nav-menu -->
+
+   <a id="dru" class="get-started-btn scrollto" (click)="openDialog()">Get Start ed</a>
+
+ </div>
+</header><!-- End Header -->
+
+<!-- ======= Services Section ======= -->
+ <section id="services" class="services section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Services</span>
+        <h2>Services</h2>
+        <p>What makes us different?</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box c">
+            <div class="icon"><i class="icofont-clock-time"></i></div>
+            <h4><a href="">Perfect Pickups</a></h4>
+            <p>Easy availability of VCabs services across the city’s popular stops and places.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box c">
+            <div class="icon"><i class="icofont-safety"></i></div>
+            <h4><a href="">Your Safety First</a></h4>
+            <p>Keep your loved ones informed
+              about your travel routes or call
+              emergency services when in need</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box c">
+            <div class="icon"><i class="icofont-not-allowed"></i></div>
+            <h4><a href="">No Hidden Charges</a></h4>
+            <p> The total amount includes taxes and fuel of your ride.
+              </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box c">
+            <div class="icon"><i class="icofont-car-alt-4"></i></div>
+            <h4><a href="">Professional Drivers</a></h4>
+            <p>Unprofessional drivers are weeded out because passengers get to rate the driver’s performance.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box c">
+            <div class="icon"><i class="icofont-money"></i></div>
+            <h4><a href="">Payment Mode</a></h4>
+            <p>Customer can either pay the fee by online or cash, after dropped by our drivers.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box c">
+            <div class="icon"><i class="icofont-support"></i></div>
+            <h4><a href="">Customer support</a></h4>
+            <p>A dedicated 24x7 customer
+              support team always at your
+              service to help solve any problem.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+  

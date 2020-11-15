@@ -1,0 +1,91 @@
+<style>
+  #dru{
+    background-color:#14c871 ;
+    color: whitesmoke;
+  }
+  #dru:hover{
+    background-color: #3b49ee;
+    cursor: pointer;
+  }
+</style>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+ <div class="container d-flex align-items-center">
+
+  <h1 class="logo mr-auto"><a routerLink="/Home">VCabs</a></h1>
+   <!-- Uncomment below if you prefer to use an image logo -->
+   <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+   <nav class="nav-menu d-none d-lg-block">
+     <ul>
+       <li><a routerLink="/Home">Home</a></li>
+       <li class="active "><a routerLink="/About">About</a></li>
+       <li><a routerLink="/Services">Services</a></li>
+       <li><a routerLink="/Contact">Contact</a></li>
+     </ul>
+   </nav><!-- .nav-menu -->
+
+   <a id="dru" class="get-started-btn scrollto" (click)="openDialog()">Get Started</a>
+
+ </div>
+</header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="section-title">
+      <span>About</span>
+      <h2>About</h2>
+      <p>Hail a car from any location and have it arrive within minutes.  </p>
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="assets/img/about.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <h3>VCabs have several distinct advantages over traditional taxis: </h3>
+          <pre></pre>
+          <ul>
+            <li><i class="icofont-check-circled"></i> Generally, VCabs is less expensive than other taxis and car services.</li>
+            <li><i class="icofont-check-circled"></i> Safety is the most important priority for drivers working with VCabs.</li>
+            <li><i class="icofont-check-circled"></i> Unprofessional drivers are weeded out because passengers get to rate the driver’s performance.</li>
+            <li><i class="icofont-check-circled"></i> Depending on the intensity of demand, prices for Uber services may be increased by a certain percentage. At super peak times, they could even be doubled or tripled.</li>
+          </ul>
+         
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row counters">
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">1800</span>
+          <p>Customer</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">1500</span>
+          <p>Positive Feedback</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">175</span>
+          <p>Drivers</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">75</span>
+          <p>Branches</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->

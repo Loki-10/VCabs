@@ -1,0 +1,148 @@
+
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="VCabs">
+        </a>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/AdminDashboard">
+                <i class="ni ni-tv-2 text-primary"></i>
+                <span class="nav-link-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/AdminUsers">
+                <i class="fa fa-taxi text-orange"></i>
+                <span class="nav-link-text">Users</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/AdminDrivers">
+                <i class="fa fa-address-book text-primary"></i>
+                <span class="nav-link-text">Drivers</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/AdminAdddrivers">
+                <i class="fa fa-plus-square text-yellow"></i>
+                <span class="nav-link-text">Add driver</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/Home">
+                <i class="ni ni-key-25 text-info"></i>
+                <span class="nav-link-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+      <div class="container-fluid">
+        <pre>
+        </pre>
+      </div>
+    </nav>
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="card">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Driver Requests</h3>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Vehicle Type</th>
+                    <th scope="col">Vehicle Number</th>
+                    <th scope="col">License</th>
+                    <th scope="col">RCBook</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor = "let driverRequest of driverRequests">
+                   <tr>
+                    <th scope="row">
+                      {{driverRequest.driverName}}
+                    </th>
+                    <td>
+                      {{driverRequest.driverEmail}}
+                    </td>
+                    <td>
+                      {{driverRequest.driverPhone}}
+                    </td>
+                    <td>
+                      {{driverRequest.vehicleModel}}
+                    </td>
+                    <td>
+                    {{driverRequest.vehicleNumber}}
+                    </td>
+                    <td>
+                      {{driverRequest.license}}
+                    </td>
+                    <td>
+                      {{driverRequest.rcbook}}
+                    </td>
+                    <td>
+                      <mat-icon class="mar" (click)="addDriverRequests(driverRequest,driverRequest.driverRequestId)"  style="color:green;cursor:pointer">add_task</mat-icon>
+                        <mat-icon class="mar" (click)="deleteDriverRequests(driverRequest.driverRequestId)" style="color: #dc2c4a;cursor:pointer">delete</mat-icon>
+                    </td>
+                 </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2020 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">VCabs</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <style>
+
+    .mar{
+      margin-right: 15px;
+    }
+    mat-icon{
+      border-radius: 5px;
+      height: 40px;
+    }
+  </style>

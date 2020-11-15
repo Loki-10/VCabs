@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="greeny ride"><strong>Confirm Booking</strong></h1>
+    <pre></pre>
+    <mat-dialog-content>Your total fare is <strong>Rs. 245.00</strong></mat-dialog-content>
+    <pre>
+    </pre>
+    <mat-dialog-content>Confrim Booking !</mat-dialog-content>
+    <pre></pre>
+    <mat-dialog-actions>
+        <button tabindex="-1"  class="buttons" mat-raised-button color="primary"  mat-dialog-close (click)="confirmBooking()">Confirm</button>
+        <pre>       </pre>
+        <button tabindex="-1" class="buttonss" mat-raised-button mat-dialog-close >Cancel</button>
+    </mat-dialog-actions>
+    </div>
+    <style>
+        .container{
+            padding: 20px;
+        }
+        .buttons{
+            background-color: #14c871;
+            color:white;
+        }
+        .buttonss{
+            background-color:#dc2c4a;
+            color:white;
+        }
+         .ride{
+            padding: 4px 0px;
+        }
+        .greeny{
+            color:#14c871;
+        }
+    </style>

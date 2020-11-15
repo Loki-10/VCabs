@@ -1,0 +1,93 @@
+   <style>
+
+
+     #dru{
+       background-color:#14c871 ;
+       color: whitesmoke;
+     }
+     #dru:hover{
+       background-color: #3b49ee;
+       cursor: pointer;
+     }
+     #ride:hover{
+       cursor: pointer;
+     }
+     
+   </style>
+   <!-- ======= Header ======= -->
+   <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a routerLink="/Home">VCabs</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a routerLink="/Home">Home</a></li>
+          <li><a routerLink="/About">About</a></li>
+          <li><a routerLink="/Services">Services</a></li>
+          <li><a routerLink="/Contact">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a id="dru" class="get-started-btn scrollto" (click)="openDialog()">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+  
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Ride by Booking or Earn by Riding</h1>
+          <h2>Perfect Pickups at your Door Steps</h2>
+          <div class="d-flex">
+            <a (click)="openDialog()" id="ride" class="btn-get-started scrollto">Book a Ride</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="lol">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+  <main id="main">
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box c">
+              <div class="icon"><i class="icofont-question"></i></div>
+              <h4 class="title"><a href="">Why VCabs?</a></h4>
+              <p class="description">VCabs is committed to helping cities around the world make public transportation more accessible, equitable, and efficient.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="icon-box c">
+              <div class="icon"><i class="icofont-live-support"></i></div>
+              <h4 class="title"><a href="">Customer Support</a></h4>
+              <p class="description">A dedicated 24x7 customer
+                support team always at your
+                service to help solve any problem that you face.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box c">
+              <div class="icon"><i class="icofont-taxi"></i></div>
+              <h4 class="title"><a href="">Secure and Safe Rides</a></h4>
+              <p class="description">Verified drivers, an emergency alert button that we have in place to ensure you a safe travel experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre>
+
+        
+      </pre>
+    </section><!-- End Featured Services Section -->

@@ -1,0 +1,71 @@
+
+    <div class="container">
+        <form #paymentForm="ngForm">
+            <h2 class="greeny ride"><strong>Payment Details</strong></h2>
+            <pre></pre>
+            <mat-dialog-content>Your total fare is <strong>Rs. 560.00</strong></mat-dialog-content>
+            <pre></pre>
+            <mat-form-field>
+                <mat-label>Card Type</mat-label>
+                <mat-select matNativeControl required tabindex="-1" name="payment" #payment="ngModel" ngModel>
+                    <mat-option value="Online">Credit Card</mat-option>
+                    <mat-option value="Cash">Debit Card</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="!payment.valid || !payment.untouched" >
+                    Card Type is Required
+                  </mat-error>
+            </mat-form-field>
+            <pre></pre>
+            <mat-form-field>
+                <mat-label>Name On Card</mat-label>
+                <input matInput type="text" tabindex="-1" #name="ngModel" name="name"  ngModel required>
+                <mat-error *ngIf="!name.untouched">Enter a Valid Name</mat-error>
+            </mat-form-field>
+            <pre></pre>
+            <mat-form-field>
+                <mat-label>Card Number</mat-label>
+                <input matInput type="text" tabindex="-1" pattern="[0-9]{16}" #cn="ngModel" name="cn"  ngModel required>
+                <mat-error *ngIf="!cn.untouched">Enter a Valid Card Number</mat-error>
+            </mat-form-field>
+            <pre></pre>
+            <mat-form-field>
+                <mat-label>Valid Till</mat-label>
+                <input matInput type="date"  tabindex="-1"  #date="ngModel" name="date" ngModel required>
+                <mat-error *ngIf="!date.untouched">Date is Required</mat-error>
+            </mat-form-field>
+            <pre></pre>
+            <mat-form-field>
+                <mat-label>CCV</mat-label>
+                <input matInput type="text" tabindex="-1" pattern="[0-9]{4}" #time="ngModel" name="time" ngModel required>
+                <mat-error *ngIf="!time.untouched">Enter a Valid CCV Number</mat-error>
+            </mat-form-field>
+            <pre></pre>
+                <button mat-raised-button mat-dialog-close [disabled]="paymentForm.form.invalid" class="confirmbtn" (click)="confirmBooking()" type="submit">
+                    Confirm
+                </button>
+                <span></span>
+                <button mat-raised-button  tabindex="-1" class="cancelbtn" mat-dialog-close>
+                    Cancel
+                </button>
+        </form> 
+        </div>
+        <style>
+            
+            
+            .greeny{
+                color:#14c871;
+            }
+            .confirmbtn{
+                margin-right: 40px;
+                margin-left: 80px;
+                background-color: #14c871;
+                color: whitesmoke;
+            }
+            .cancelbtn{
+                background-color: #dc2c4a;
+                color: whitesmoke;
+            }
+           
+           
+        </style>
+        
